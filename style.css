@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(222, 177, 222);
+    background-image: url(photo.avif);
+    background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  box-shadow: 2px;
+  margin-right: 210px;
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+#about{
+    height: 200px;
+    width: 220px;
+    margin-left: 20px;
+    background-color: rgba(119, 197, 197, 0.584);
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+#about:hover {
+  transform: scale(1.05);
+}
+#projects-container {
+  display: flex;
+  flex-wrap: nowrap;           /* Force one row */
+  overflow-x: auto;            /* Enable horizontal scroll */
+  gap: 30px;
+  justify-content: flex-start;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar Styling (Optional) */
+#projects-container::-webkit-scrollbar {
+  height: 8px;
+}
+#projects-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Project Boxes */
+.project-box {
+  width: 220px;
+  height: 300px;
+  background-color: rgba(119, 197, 197, 0.584);
+  border-radius: 10px;
+  padding: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-right: 60px;
+}
+
+/* Hover Zoom for Project Boxes */
+.project-box:hover {
+  transform: scale(1.05);
+}
+
+/* Links inside project cards */
+.project-box a {
+  color: blue;
+  text-decoration: underline;
+}
+#projects-container::-webkit-scrollbar {
+  height: 8px;
+}
+#projects-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+#game{
+    height: 25px;
+    width: 40px;
+    background-color:rgb(42, 149, 149) ;
+    border-radius: 10px;
+     flex-shrink: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.742);
+    transition: transform 0.3s ease;
+}
+#game:hover {
+  transform: scale(1.05);
+}
+#anc{
+    text-decoration: none;
+    margin: 3px;
+    color: aliceblue;
+}
+/* Reset default margins */
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style nav links */
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Scale on hover */
+nav a:hover {
+  transform: scale(1.1);
+}
+
+/* Sliding underline effect */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background-color: rgba(3, 71, 71, 0.611);
+  transition: width 0.3s linear;
+}
+
+/* Expand underline on hover */
+nav a:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <h1>🐍Snake Game</h1>
+  <div id="game-board"></div>
+  <p>Score: <span id="score">0</span></p>
+
+  <div class="controls">
+    <button onclick="changeDirection('ArrowUp')">⬆️</button>
+    <div>
+      <button onclick="changeDirection('ArrowLeft')">⬅️</button>
+      <button onclick="changeDirection('ArrowDown')">⬇️</button>
+      <button onclick="changeDirection('ArrowRight')">➡️</button>
+    </div>
+  </div>
+
+  <button id="startBtn" onclick="startGame()">▶️ Start Game</button>
+  <button id="restartBtn" onclick="restartGame()">🔁 Restart</button>
+  <script src="snake.js"></script>
+</body>
+</html>

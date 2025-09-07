@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🍎 Catch the Fruit</title>
+  <link rel="stylesheet" href="catch.css" />
+</head>
+<body>
+  <h1>🍓 Catch the Fruit!</h1>
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+  <div class="status">
+    <p>Score: <span id="score">0</span> | Missed: <span id="missed">0</span>/5</p>
+  </div>
+
+  <div class="config">
+    <label for="appleCountRange">🍏 Apples Falling:</label>
+    <input type="range" id="appleCountRange" min="1" max="10" value="5" />
+    <span id="appleCountDisplay">5</span>
+  </div>
+
+  <div class="buttons">
+    <button id="startBtn">▶️ Start</button>
+    <button id="pauseBtn">⏸ Pause</button>
+    <button id="resumeBtn">▶️ Resume</button>
+    <button id="resetBtn">🔁 Reset</button>
+  </div>
+
+  <script src="catch.js"></script>
+</body>
+</html>

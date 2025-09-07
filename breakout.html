@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎯 Breakout Game</title>
+  <link rel="stylesheet" href="breakout.css">
+</head>
+<body>
+  <h1>🎯 Breakout Game</h1>
+
+  <canvas id="gameCanvas" width="600" height="700"></canvas>
+
+  <div class="info-panel">
+    <p>Score: <span id="score">0</span></p>
+
+    <div class="buttons">
+      <button id="startBtn">▶️ Start</button>
+      <button id="resetBtn">🔁 Reset</button>
+    </div>
+
+    <div class="speed-buttons">
+      <label>Speed:</label>
+      <button onclick="setSpeed('slow')">🐢 Slow</button>
+      <button onclick="setSpeed('normal')">⚖️ Normal</button>
+      <button onclick="setSpeed('fast')">⚡ Fast</button>
+    </div>
+  </div>
+
+  <script src="breakout.js"></script>
+</body>
+</html>
